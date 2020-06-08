@@ -1,5 +1,6 @@
-Symfony Bundle integrating Consistence library with JMS Serializer
-==================================================================
+Symfony Bundle integrating Consistence library and JMS Serializer with Symfony 5 support
+========================================================================================
+![Travis CI](https://travis-ci.org/scattercz/consistence-jms-serializer-symfony.svg?branch=master)
 
 > This is a Symfony bundle providing integration for the standalone package
 [`consistence/consistence-jms-serializer`](https://github.com/consistence/consistence-jms-serializer),
@@ -8,6 +9,8 @@ if you are not using Symfony, follow instructions there.
 This bundle provides integration of [Consistence](https://github.com/consistence/consistence) value objects for [JMS Serializer](http://jmsyst.com/libs/serializer) so that you can use them in your serialization mappings.
 
 For now, the only integration which is needed is for [Enums](https://github.com/consistence/consistence/blob/master/docs/Enum/enums.md), see the examples below.
+
+This bundle was updated so it is now working in Symfony 5 and PHP 7.4.
 
 Usage
 -----
@@ -305,10 +308,10 @@ class Consistence\JmsSerializer\Example\User\User#48 (1) {
 Installation
 ------------
 
-1) Install package [`consistence/consistence-jms-serializer-symfony`](https://packagist.org/packages/consistence/consistence-jms-serializer-symfony) with [Composer](https://getcomposer.org/):
+1) Install package [`scattercz/consistence-jms-serializer-symfony`](https://packagist.org/packages/consistence/consistence-jms-serializer-symfony) with [Composer](https://getcomposer.org/):
 
 ```bash
-composer require consistence/consistence-jms-serializer-symfony
+composer require scattercz/consistence-jms-serializer-symfony
 ```
 
 2) Register the bundle in your application:
