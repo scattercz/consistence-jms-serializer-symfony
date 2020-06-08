@@ -3,8 +3,8 @@ language: php
 sudo: false
 
 php:
-  - 7.2
   - 7.3
+  - 7.4
   - nightly
 
 env:
@@ -23,7 +23,7 @@ install:
   - composer update --no-interaction --no-suggest --prefer-source ${COMPOSER_DEPENDENCIES_OPTIONS}
 
 script:
-  - bin/phing ci-build
+  - bin/phpunit tests --verbose
 
 after_success:
   - if [ "${TRAVIS_ALLOW_FAILURE}" = false ]; then
